@@ -1,0 +1,350 @@
+/*
+Order style selectors from general to specific
+*/
+
+/* ---------------------------------------
+HTML
+------------------------------------------*/ 
+/* Prevent the web page from jumping when a scroll bar appears.*/
+html{
+	overflow-y: scroll;
+}
+body{
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-image: url("../images/chart1_5.png");
+}
+h1{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:40px;
+}
+h2{
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	margin:0px;
+}
+h3{
+	font-family: 'PT Sans Narrow', sans-serif;
+	color:white;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin:0px;
+}
+p{
+	padding:10px;
+	font-size:20px;
+}
+/* Form items*/
+fieldset {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+}
+textarea:focus, input:focus {
+    border: 2px solid #037CCA;
+}
+label{
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+}
+/* Lists */
+ol{
+	margin-left:30px;
+	padding-bottom:20px;
+}
+
+/* Images */
+
+
+/* Tables */
+
+/* ---------------------------------------
+CLASSES
+------------------------------------------*/ 
+/* set the pseudoclasses for hyperlinks in content boxes back to black 
+so they can be seen on our white background */
+
+.contentbox a:link{
+	color:black;
+}
+.contentbox a:visited{
+	color:black;
+}
+
+/* unvisited link */
+a:link {
+    color:white;
+}
+/* visited link */ 
+a:visited {
+    color:#FFBC00; /* B2b2b2 light grey */
+}
+/* mouse over link */
+a:hover {
+    color:#ffc930; 
+}
+
+
+/* Navigation elements*/
+.nav_item{
+	display:block;
+	background: #024672;
+	font-size:17px;
+	padding:0px;
+	text-decoration:none;
+	border:2px solid rgba(33, 68, 72, 0.59);
+	color:white;
+	text-align:center;
+	border-radius: 6px;
+	text-shadow: 1px 1px 3px #666666;
+	padding:8px;
+}
+.selected_item{
+	background: #359de1;
+	text-decoration:none;
+	color:#ffc930; /* yellow */
+}
+
+.nav_item:hover{
+	background: #359de1;
+	text-decoration:none;
+}
+
+/* Image positions*/
+.align_left{
+	float:left;
+	margin-left:20px;
+}
+.align_right{
+	float:right;
+	margin-right:20px;
+}
+.align_center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.border{
+	border:2px solid #037CCA;
+}
+
+.footer_nav{
+	display:inline;
+	padding:10px;
+}
+
+
+/* table styling */
+.specs{
+	background-color:#F8F8F8;
+	width:600px;
+	text-align:center;
+	border-collapse:collapse;
+	table-layout:fixed;
+	border:1px solid #037CCA;
+	margin-left:auto;
+	margin-right:auto;
+}
+.tabletitle{
+	color:#037CCA;
+	width:75px;
+	text-align:right;
+	border:1px solid #037CCA;
+	padding:5px;
+}
+.tabledata{
+	border:1px solid #037CCA;
+	padding:5px;
+}
+.thumbleft{
+	border:1px solid #037CCA;
+	margin:5px;
+	float:left;
+}
+.thumbright{
+	border:1px solid #037CCA;
+	margin:5px;
+	float:right;
+}
+.headshots{
+	margin:5px;
+	float:left;
+}
+.headshotdiv{
+	vertical-align:middle;
+}
+/* ---------------------------------------
+IDs
+------------------------------------------*/
+
+#container{
+	position:relative;
+	padding:10px;
+}
+
+/* Top level navigation elements. */
+#navigation{
+	background-color:#037CCA;
+	border-radius: 15px 15px 0px 0px;
+	position:relative;
+	height:280px;
+	width:60%;
+	min-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#home_image{
+	position:absolute;
+	left:20px;
+	top:10px;
+	width:100px;
+	height:40px;
+}
+#home{
+	position:absolute;
+	margin-top:210px;
+	left:315px;
+	width:75px;
+	height:40px;
+}
+#build_todo{
+	position:absolute;
+	margin-top:210px;
+	left:390px;
+	width:75px;
+	height:40px;
+}
+#build_done{
+	position:absolute;
+	margin-top:210px;
+	left:465px;
+	width:75px;
+	height:40px;
+}
+#sail_learning{
+	position:absolute;
+	margin-top:210px;
+	left:540px;
+	width:75px;
+	height:50px;
+}
+#sail_trips{
+	position:absolute;
+	margin-top:210px;
+	left:615px;
+	width:75px;
+	height:50px;
+}
+#about_boat{
+	position:absolute;
+	margin-top:210px;
+	left:690px;
+	width:75px;
+	height:50px;
+}
+#about_us{
+	position:absolute;
+	margin-top:210px;
+	left:765px;
+	width:75px;
+	height:50px;
+}
+#contact{
+	position:absolute;
+	margin-top:210px;
+	left:840px;
+	width:75px;
+	height:50px;
+}
+#subtitle_box{
+	position:absolute;
+	margin-top:60px;
+	left:330px;
+	width:600px;
+	height:100px;
+}
+#subtitle{
+	font-family: 'Rock Salt', cursive;
+	font-size:30px;
+	padding:0px;
+}
+/* Top right icons */
+#twitter{
+	position:relative;
+	float:right;
+	padding:10px;
+}
+#email{
+	position:relative;
+	float:right;
+	padding:10px;
+}
+/* Change the nav button color of the current page */
+#current{
+	background:#F8F8F8;
+	text-decoration:none;
+	color:#024672;
+}
+/* Main */ 
+#main{
+	margin-top:0px;
+	position:relative;
+	min-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#content1{
+	margin:0 auto;
+	margin-top:10px;
+	border:1px solid #037CCA;
+	position:relative;
+	min-width:1000px;
+	background-color:white;
+	width:60%;
+}
+
+/* Map element */
+#map {
+	height:400px; 
+	margin:10px;
+	border:1px solid black;
+}
+
+/* Footer */ 
+#footer{
+	background-color:#037CCA;
+	border-radius: 0px 0px 15px 15px;
+	margin-top:10px;
+	color:white;
+	position:relative;
+	min-width:1000px;
+	height:100px;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#footertext{
+	position:absolute;
+	height:50px;
+	padding:0px;
+	top:45px;
+	left:10px;
+	font-size:15px;
+}
+#footer_menu{
+	position:absolute;
+	left:310px;
+}
+
+
+/* Form styles */
+#submit{
+	margin-left:292px;
+	margin-bottom:10px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Author: Tyson Haverkort
+	Date: June 8, 2015
+	Class: Comp1850 
+	Due: June 23, 2015. 
+	Description: Main landing page for Hide From the Tide
+	-->
+	
+	<head>
+		<title>Welcome to Hide from the Tide</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<!-- Leaflet CSS (leafletjs.com) -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"> 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+	</head>
+	<body>
+	<div id="container">
+		<div id="navigation"> <!-- Navigation starts -->
+			<div id="home_image"> 
+				<a href="./index.html"><img src="./images/home_sepia_cropped.png" alt="man enjoying a beer on a boat"></a>
+			</div>
+			<div id="home">
+				<a href="./index.html" class="nav_item">Home</a>
+			</div>
+			<div id="build_todo">
+				<a href="./build_todo.html" class="nav_item">To Do</a>
+			</div>
+			<div id="build_done">
+				<a href="./build_done.html" class="nav_item">Done</a>
+			</div>
+			<div id="sail_learning">
+				<a href="./sail_learning.html" class="nav_item">Learning</a>
+			</div>
+			<div id="sail_trips">
+				<a class="nav_item" id="current">Trips</a>
+			</div>
+			<div id="about_boat">
+				<a href="./about_boat.html" class="nav_item">The Boat</a>
+			</div>
+			<div id="about_us">
+				<a href="./about_us.html" class="nav_item">About Us</a>
+			</div>
+			<div id="contact">
+				<a href="./contact.html" class="nav_item">Contact</a>
+			</div>
+			<!-- twitter and email icons -->
+			<div id="email">
+				<a href="mailto:t_haverkort@hotmail.com?Subject=Website%20Contact%20Form" target="_top"><img src="./images/email32.png" alt="email icon"></a>
+			</div>
+			<div id="twitter">
+				<a href="https://twitter.com/ninetynein" target="_blank"><img src="./images/twitter32.png" alt="twitter icon"></a>
+			</div>
+			<!-- subtitle -->
+			<div id="subtitle_box">
+				<h1 id="subtitle">Tales from a Reluctant Sailor</h1>
+			</div>
+		</div> <!-- navigation ends -->
+		<div id="main">
+			<div class="contentbox" id="content1"> <!-- Content starts -->
+				<h2>Trips we've taken</h2>
+				<p>Trips?  British Columbia is a sailors paridise.  Or so they say.  All I can say for sure is that the Burrard Civic Marina is quite nice.  
+				Showers, clean bathrooms.  What else could one want?  Sailing in solitude through one of the most picturesque parts of Canada?  Maybe we 
+				can consider that once repairs are done.  For now, here is a map of where the boat is moored.  In the future, I'll add our GPS tracks to 
+				this, along with a summary of the trip.</p>
+				<div id="map">
+				</div>
+					<script src="./js/map.js"></script>
+			</div> <!-- Content ends -->			
+		</div>
+		<div id="footer">
+			<div>
+				<p id="footertext">Site and images by Tyson Haverkort (Copyleft © 2015).  Icons from  <a href="https://icons8.com" target="_blank">Icons8</a></p>
+			</div>
+			<div id="footer_menu">
+				<ul>
+					<li class="footer_nav"><a href="./index.html">Home</a></li>
+					<li class="footer_nav"><a href="./build_todo.html">To Do</a></li>
+					<li class="footer_nav"><a href="./build_done.html">Done</a></li>
+					<li class="footer_nav"><a href="./sail_learning.html">Learning</a></li>
+					<li class="footer_nav"><a href="./sail_trips.html">Trips</a></li>
+					<li class="footer_nav"><a href="./about_boat.html">Boat</a></li>
+					<li class="footer_nav"><a href="./about_us.html">About Us</a></li>
+					<li class="footer_nav"><a href="./contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
