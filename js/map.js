@@ -11,8 +11,8 @@
 /*Initialize the map and set the view center and zoom level*/
 var map = L.map('map').setView([49.276040, -123.14], 16);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 // add a marker in the given location, attach some popup content to it and open the popup
