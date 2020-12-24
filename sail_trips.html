@@ -14,13 +14,10 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-		<!-- Leaflet CSS (leafletjs.com) -->
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-			crossorigin=""/>
-		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-			crossorigin=""></script>
+		<!-- Sample from https://storymap.knightlab.com/advanced/ -->
+		<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+		<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+
 	</head>
 	<body>
 	<div id="container">
@@ -71,7 +68,7 @@
 				Showers, clean bathrooms.  What else could one want?  Sailing in solitude through one of the most picturesque parts of Canada?  Maybe we 
 				can consider that once repairs are done.  For now, here is a map of where the boat is moored.  In the future, I'll add our GPS tracks to 
 				this, along with a summary of the trip.</p>
-				<div id="map">
+			<div id="map" style="width: 100%; height: 600px;">
 				</div>
 					<script src="./js/map.js"></script>
 			</div> <!-- Content ends -->			
